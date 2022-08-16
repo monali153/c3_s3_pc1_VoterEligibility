@@ -9,7 +9,7 @@ public class VoterImpl {
         object.setName("John");
         object.setAge(10);
 
-        System.out.println(object.getAgeCriteria(object.getAge()));
+        System.out.println(object.getAgeCriteria());
     }
 
 

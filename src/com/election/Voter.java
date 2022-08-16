@@ -27,11 +27,11 @@ public class Voter {
         this.age = age;
     }
 
-    public String getAgeCriteria(int age) {
+    public String getAgeCriteria() {
 
-        if (age >= VOTER_ELIGIBLE_AGE) {
+        if (getAge() >= VOTER_ELIGIBLE_AGE) {
             return getName() + " Is Eligible to Vote";
-        } else if (age > 0 && age < VOTER_ELIGIBLE_AGE) {
+        } else if (getAge() > 0 && age < VOTER_ELIGIBLE_AGE) {
             return getName() + " Is Not Eligible to Vote";
         }
         return "Age Can't Be Negative or Zero";
